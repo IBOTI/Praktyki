@@ -254,3 +254,157 @@ body,html {
     background-color: gray;
     border-radius: 20px 20px;
 }
+h1{
+    
+    font-family: 'Bebas Neue';
+    font-size: 3vw;
+    letter-spacing: -0.8px;
+    word-spacing: 0.6px;
+    color: #3f1700e5;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    
+}
+h2{
+    font-family: 'Bebas Neue';
+font-size: 1vw;
+
+
+color: #474747;
+font-weight: 400;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;  
+}
+p
+{
+    font-family: 'Bebas Neue';
+font-size: 2vw;
+letter-spacing: -0.8px;
+word-spacing: 0.6px;
+color: #474747;
+font-weight: 400;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+}
+body {margin:1}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* conterner ze slajdami */
+.slideshow-container {
+max-width: 90%;
+position: relative;
+margin: auto;
+overflow: auto;
+
+-webkit-box-shadow: 44px 20px 37px -2px rgba(153,153,153,1);
+-moz-box-shadow: 44px 20px 37px -2px rgba(153,153,153,1);
+box-shadow: 44px 20px 37px -2px rgba(153,153,153,1);
+
+}
+
+/* guziki na bokach */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+color: #f2f2f2;
+font-size: 15vw;
+
+position: absolute;
+width: 40%;
+height: 95%;
+top:5%;
+padding-left: 5%;
+float: left;
+
+}
+.right
+{
+max-width: 50%;
+float: right;
+position: relative;
+padding: 20px;
+
+}
+
+
+
+
+.dots
+{
+width: 70%;
+position: absolute;
+bottom: 1vw;
+padding-left: 5%;
+
+
+}
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 5px;
+background-color: rgb(143, 143, 143);
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #ffc400;
+}
+
+/* animacja (niewiem jak to działa wziete z neta) */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
