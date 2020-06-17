@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;400;600;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="first-section-container">
+        <div id="first-section">
+            <nav id="navigation-bar">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">           
+                </a>
+                <div class="navigation-links-container">
+                    <div class="navigation-links-contact" name="contact">
+                        <label for="contact">
+                            <img src="img/scooter.png" alt="">
+                        </label>
+                        Express Delivery +1 234 567 890
+                    </div>
+                    <ul class="navigation-links">
+                        <li>
+                            HOME
+                        </li>
+                        <li>
+                            MENU
+                        </li>
+                        <li>
+                            OUR STORY
+                        </li>
+                        <li>
+                            CONTACT US
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="first-section-container-body">
+                <div class="first-section-container-left">
+                    <span class="first-section-good">
+                        IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS
+                    </span>
+                    <img src="img/burger_week.png" alt="">
+                </div>
+                <img src="img/first_section_burger.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="choose_enjoy-container">
+        <span class="choose_enjoy-header">
+                CHOOSE & ENJOY
+        </span>
+        <span class="choose_enjoy-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quam fugit labore autem? Incidunt ad officiis tempore beatae. Et ullam cum delectus aperiam voluptates soluta ut natus at? Distinctio eos aut temporibus ex sint.
+        </span>
+        <div class="choose_enjoy-burgers-container">
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger1.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger2.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger1.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <script>
+                for (element of document.querySelectorAll(".choose_enjoy-burger-container")) {
+                    element.addEventListener ("mouseover", function () {
+                        this.children[0].classList.add("burger-hover");
+                        this.children[1].classList.add("shadow-hover");
+                        this.addEventListener("mouseout", function () {
+                            this.children[0].classList.remove("burger-hover");
+                            this.children[1].classList.remove("shadow-hover");
+                        })
+                        
+                    });
+                }
+            </script>
+        </div>
+    </div>
+
+    <div id="last-section-container">
+        <div id="last-section">
+            <div id="last-section-left">
+                <div class="last-section-left-firstgroup">
+                    <span class="last-section-left-header">
+                        <label for="last-section-left-header">
+                            <img src="img/burger_logo.png" alt="">
+                        </label>
+                        BURGER HOUSE
+        
+                    </span>
+                    <span class="last-section-left-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A perferendis delectus fugiat earum hic rerum, unde, ex veritatis expedita culpa nulla alias, excepturi tenetur deleniti sequi necessitatibus sit eius. Quam accusantium deleniti voluptates adipisci vero rem exercitationem nemo voluptatem aliquam eligendi, vel deserunt dignissimos ab!
+                    </span>
+                </div>
+                <span class="last-section-left-copyright">
+                    © COMPANY NAME 2020 ALL RIGHTS RESERVED
+                </span>
+            </div>
+            <div id="last-section-right">
+                <div class="last-section-right-element">
+                    <span name="location">
+                        <label for="location">
+                            <img src="img/location_icon.png" alt="">
+                        </label>
+                        MAIN ROAD, BUILDING NAME, COUNTRY
+                    </span>
+                    <span name="email" id="last-section-right-element-email">
+                        <label for="email">
+                            <img src="img/email_icon.png" alt="">
+                        </label>
+                        INFO@COMPANYNAME.COM
+                    </span>
+                </div>
+                <div class="last-section-right-element">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/whatsapp.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
