@@ -10,13 +10,19 @@ body,html {
 }
 @media (min-width: 1205px) {
     .first-section {
-        height: 100vh !important;
+        height: 100vh;
     }
-    .choose_enjoy-burgers-container {
-        flex-direction: row !important;
-    }
+
 }
 
+@media (max-width: 1205px) {
+    .first-section {
+        height: 100%;
+    }
+    .choose_enjoy-burgers-container {
+        flex-direction: column;
+    }
+}
 
 
 .first-section {
@@ -25,7 +31,6 @@ body,html {
     background-image: url("img/first_section_bg.png");
     background-size: cover;
 
-    height: 100%;
     background-color: transparent;
 
     display: flex;
@@ -95,7 +100,6 @@ body,html {
     align-items: center;
     flex-wrap: wrap;
     height: 70%;
-    
 
 }
 
@@ -103,7 +107,7 @@ body,html {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start
+    align-items: flex-start;
 
 }
 .first-section-good {
@@ -160,8 +164,6 @@ body,html {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-
-    flex-direction: column;
     
 }
 
@@ -282,10 +284,12 @@ body,html {
 .container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .blok{
     margin-top:3em;
     height: 30%;
+    width: 50%;
     display: inline-flex;
     
     align-self: center;
@@ -295,7 +299,7 @@ body,html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
 }
 
 .flex-element-container img {
@@ -317,6 +321,8 @@ body,html {
 
 }
 
+
+
 h1 {
     color:#572a0d;
     margin-top:10px;
@@ -328,7 +334,10 @@ h1 {
 .last-section {
     position: relative;
 
-    background-color: transparent;
+    background-image: url("img/last_section_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
     width: 95vw;
     height: 50em;
 
@@ -338,23 +347,6 @@ h1 {
     justify-content: space-between;
 
     color: white;
-}
-
-.last-section::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-
-    height: 100%;
-    width: 100%;
-
-    background-image: url("img/last_section_bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .last-section-left {
@@ -636,12 +628,12 @@ to {opacity: 1}
         text-align:center;
     }
     .filip-button {
-    background-color: red;
-    width:500px;
+        background-color: red;
+        width:500px;
 
-    min-height:70px;
-    
-    color:white;
+        min-height:70px;
+        
+        color:white;
     }
     input{
 
