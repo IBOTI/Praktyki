@@ -1,22 +1,26 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title></title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
-<script src="js.js" defer></script>
+    <meta charset="UTF-8">
+    <title> Burger House </title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="js.js" defer></script>
 </head>
+
 <body>
     <div id="first-section-container">
         <div id="first-section">
             <nav id="navigation-bar">
                 <a href="index.html">
                     <img src="img/logo.png" alt="">
-                    
+
                 </a>
                 <div class="navigation-links-container">
-                    <div class="navigation-links-contact" name="contact">
+                    <div class="navigation-links-contact" id="contact">
                         <label for="contact">
                             <img src="img/scooter.png" alt="">
                         </label>
@@ -33,7 +37,7 @@
                             OUR STORY
                         </li>
                         <li>
-                            CONTACT US
+                            CONTACT UdS
                         </li>
                     </ul>
                 </div>
@@ -49,76 +53,192 @@
             </div>
         </div>
     </div>
-    
-    
-    <div id="blok">
-    
-<img class="zdj1" src="img/zdj1.png" alt="zdj1" width="45%" height="64%">
-<img class="zdj2" src="img/zdj2.png" alt="zdj2" width="45%" height="28%">
-<img class="zdj3" src="img/zdj3.png" alt="zdj3" width="45%" height="28%">
 
-<div id="burg">
-   <p1>Always tasty burger</p1>
-</div>
-</div>
-    
-    
+
+    <div class="container">
+        <div class="blok">
+
+            <img class="zdj1" src="img/zdj1.png">
+            <div class="flex-element-container">
+
+                <img class="zdj2" src="img/zdj2.png">
+                <img class="zdj3" src="img/zdj3.png">
+            </div>
+        
+            
+        </div>
+        <div id="burg">
+
+            <p>Always tasty burger</p>
+
+        </div>
+    </div>
+
+
+    <div id="choose_enjoy-container">
+        <span class="choose_enjoy-header">
+            CHOOSE & ENJOY
+        </span>
+        <span class="choose_enjoy-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quam fugit labore autem? Incidunt ad
+            officiis tempore beatae. Et ullam cum delectus aperiam voluptates soluta ut natus at? Distinctio eos aut
+            temporibus ex sint.
+        </span>
+        <div class="choose_enjoy-burgers-container">
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger1.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger2.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <div class="choose_enjoy-burger-container">
+                <img src="img/burger1.png" alt="">
+                <div class="choose_enjoy-burger-shadow">
+
+                </div>
+                <span class="choose_enjoy-burger-header">
+                    Lorem, ipsum dolor.
+                </span>
+                <span class="choose_enjoy-burger-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, facilis.
+                </span>
+                <button class="choose_enjoy-burger-button">
+                    ORDER NOW
+                </button>
+            </div>
+            <script>
+                for (element of document.querySelectorAll(".choose_enjoy-burger-container")) {
+                    element.addEventListener("mouseover", function () {
+                        this.children[0].classList.add("burger-hover");
+                        this.children[1].classList.add("shadow-hover");
+                        this.addEventListener("mouseout", function () {
+                            this.children[0].classList.remove("burger-hover");
+                            this.children[1].classList.remove("shadow-hover");
+                        })
+
+                    });
+                }
+            </script>
+        </div>
+    </div>
+
+
     <br>
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-   
-          <div class="right">
-            <img src="img/HAM.jpg" style="width:100%;">
-          </div>
-          <div class="text">
-            <h2>discover</h2>
-            <h1>burger1</h1>
-            <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
-                 bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy: 
-                 ostry BBQ i łagodny majonezowy. </p>
-          </div>
+
+            <div class="right">
+                <img src="img/HAM.jpg" style="width:100%;">
+            </div>
+            <div class="text">
+                <h2>discover</h2>
+                <h1>burger1</h1>
+                <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
+                    bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy:
+                    ostry BBQ i łagodny majonezowy. </p>
+            </div>
         </div>
-        
+
         <div class="mySlides fade">
-         
-          <div class="right">
-            <img src="img/HAM.jpg" style="width:100%;">
-          </div>
-          <div class="text">
-            <h2>discover</h2>
-            <h1>burger2</h1>
-            <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
-                 bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy: 
-                 ostry BBQ i łagodny majonezowy. </p>
-          </div>
+
+            <div class="right">
+                <img src="img/HAM.jpg" style="width:100%;">
+            </div>
+            <div class="text">
+                <h2>discover</h2>
+                <h1>burger2</h1>
+                <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
+                    bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy:
+                    ostry BBQ i łagodny majonezowy. </p>
+            </div>
         </div>
-        
+
         <div class="mySlides fade">
-          
-          <div class="right">
-          <img src="img/HAM.jpg" style="width:100%;">
+
+            <div class="right">
+                <img src="img/HAM.jpg" style="width:100%;">
+            </div>
+            <div class="text">
+                <h2>discover</h2>
+                <h1>burger3</h1>
+                <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
+                    bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy:
+                    ostry BBQ i łagodny majonezowy. </p>
+            </div>
         </div>
-          <div class="text">
-            <h2>discover</h2>
-            <h1>burger3</h1>
-            <p>Świeży, ręcznie panierowany kawałek kurczaka w dużej bułce sezamowej,
-                 bekon, żółty ser Cheddar, smakowita czerwona cebulka, świeża zielona sałatka oraz aż dwa sosy: 
-                 ostry BBQ i łagodny majonezowy. </p>
-          </div>
-        </div>
-        
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-        
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+
+    </div>
+    <div class="filip-container" style="position:relative; height: 100%; font-family: 'Bebas Neue';">
     
-    
+        <div class="cale">
+            <br><br><br><br><br><br><br>
+            <div class="tlo1">
+                <img src="img/1.png" width="100" height="300">
+            </div>
+            <div class="tlo2">
+                <img src="img/2.jpg" width="300" height="300">
+            </div>
+            <div class="tlo3">
+                <img src="img/3.jpg" width="300" height="300">
+            </div>
+            <div class="napis1">
+                <br>
+                Reservation
+            </div>
+            <div class="napis2">
+                <b>Book your table</b>
+            </div>
+            <div class="pola">
+                <br>
+                <input type="text" size="70" placeholder="Name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" size="70" placeholder="Email">
+                <br>
+                <br>
+                <input type="text" size="70" placeholder="Date">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" size="70" placeholder="Time">
+                <br>
+                <br>
+                <input type="text" size="70" placeholder="People">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="filip-button">Find a table</button>
+            </div>
+        </div>
+    </div>
     <div id="last-section-container">
         <div id="last-section">
             <div id="last-section-left">
@@ -128,10 +248,13 @@
                             <img src="img/burger_logo.png" alt="">
                         </label>
                         BURGER HOUSE
-        
+
                     </span>
                     <span class="last-section-left-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A perferendis delectus fugiat earum hic rerum, unde, ex veritatis expedita culpa nulla alias, excepturi tenetur deleniti sequi necessitatibus sit eius. Quam accusantium deleniti voluptates adipisci vero rem exercitationem nemo voluptatem aliquam eligendi, vel deserunt dignissimos ab!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A perferendis delectus fugiat earum
+                        hic rerum, unde, ex veritatis expedita culpa nulla alias, excepturi tenetur deleniti sequi
+                        necessitatibus sit eius. Quam accusantium deleniti voluptates adipisci vero rem exercitationem
+                        nemo voluptatem aliquam eligendi, vel deserunt dignissimos ab!
                     </span>
                 </div>
                 <span class="last-section-left-copyright">
@@ -139,14 +262,15 @@
                 </span>
             </div>
             <div id="last-section-right">
+                <a href="http://www.freepik.com" style="position: absolute; bottom: 0; text-decoration:none; color: white;">Designed by Freepik</a>
                 <div class="last-section-right-element">
-                    <span name="location">
+                    <span id="location">
                         <label for="location">
                             <img src="img/location_icon.png" alt="">
                         </label>
                         MAIN ROAD, BUILDING NAME, COUNTRY
                     </span>
-                    <span name="email" id="last-section-right-element-email">
+                    <span id="email" id="last-section-right-element-email">
                         <label for="email">
                             <img src="img/email_icon.png" alt="">
                         </label>
@@ -181,4 +305,5 @@
         </div>
     </div>
 </body>
+
 </html>
