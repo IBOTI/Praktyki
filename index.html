@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;600&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js.js" defer></script>
 </head>
 
@@ -26,6 +27,10 @@
                         </label>
                         Express Delivery +1 234 567 890
                     </div>
+
+                
+
+
                     <ul class="navigation-links">
                         <li>
                             HOME
@@ -42,6 +47,22 @@
                     </ul>
                 </div>
             </nav>
+
+            <div id="menu">
+                <div class="button"onclick="what()">
+                <div id="l2"></div>
+                    <div class="twolines">
+                        <div id="line"></div>
+                        <div id="line-in"></div>
+                    </div>
+                    <div id="l3"></div>
+                </div>
+            <p class="textmenu">HOME<br>
+            MENU<br>
+            OUR STORY<br>
+            CONTACT US<br></p>
+            </div>
+
             <div class="first-section-container-body">
                 <div class="first-section-container-left">
                     <span class="first-section-good">
@@ -304,6 +325,50 @@
             </div>
         </div>
     </div>
+    <script>
+        $(".textmenu").hide();
+        function what(){
+            var nav = document.getElementById("menu");
+              if (nav.style.width == '300px') {
+                  hide();
+              } else {
+                  show();
+              }
+        }
+        function hide(){
+                  $("#menu").animate({
+                      width: "0px"
+                  });
+                  $(".textmenu").fadeOut();
+                  $(".icon-cancel").fadeOut();
+                  $("#l2").animate({
+                      opacity: "1"
+                  });
+                  $("#l3").animate({
+                      opacity: "1"
+                  });
+                  document.getElementById("line").style.transform = "rotate(0deg)";
+                  document.getElementById("line-in").style.transform = "rotate(0deg)";
+        }
+        function show(){
+            $("#menu").show();
+                  $(".textmenu").fadeIn();
+                  $(".icon-cancel").fadeIn();
+                  $("#menu").animate({
+                      width: "300px"
+                  });
+                  
+                  document.getElementById("line").style.transform = "rotate(45deg)";
+                  document.getElementById("line-in").style.transform = "rotate(-45deg)";
+                 
+                  $("#l2").animate({
+                      opacity: "0"
+                  });
+                  $("#l3").animate({
+                      opacity: "0"
+                  });
+          }
+    </script>
 </body>
 
 </html>
