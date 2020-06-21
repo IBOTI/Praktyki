@@ -199,9 +199,17 @@
         </div>
 
         <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <!-- 
+                usuwamy liniowe wywolanie funkcji currentSlide, zostanie ono przeniesione do pliku JS 
+                zamiast niego dodajemy atrybut data-slide, ktory bedzie informowal skrypt JS,
+                ktory slajd chcemy wyswietlic po kliknieciu konkretnej kropki
+
+                wiecej o atrybutach data-* mozna poczytac tutaj:
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+            -->
+            <span class="dot"  data-slide="1"></span>
+            <span class="dot"  data-slide="2"></span>
+            <span class="dot"  data-slide="3"></span>
         </div>
 
     </div>
